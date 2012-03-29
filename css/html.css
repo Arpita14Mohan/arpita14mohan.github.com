@@ -283,7 +283,7 @@ a:hover img {
   width: 589px;
   height: 100%;
   margin: 0 auto;
-  
+  line-height: 2.0em;
   text-align: left;
 }
 
@@ -607,3 +607,4 @@ ul.bigLinks li a:hover span.desc {
   background: none;
   filter: progid:DXImageTransform.Microsoft.AlphaImageLoader(src='img/bg/content.png',sizingMethod='scale');
 }
+
