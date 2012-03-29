@@ -1,0 +1,117 @@
+
+<html>
+<head>
+  <title>Discover Technology - Arpita Mohan</title>
+  <link rel="stylesheet" type="text/css" href="css/html.css" media="screen, projection, tv " />
+  <link rel="stylesheet" type="text/css" href="css/layout.css" media="screen, projection, tv" />
+  <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="content">
+    <div id="header">
+      <h1><span class="big darkBrown">D</span>iscover <span class="big darkBrown">T</span>echnology </h1>
+      <h2><span class="highlight">Designed by, Arpita Mohan</span></h2>
+    </div>
+    <!-- #menu: topbar menu of the site.  Use the helper classes .two, .three, .four and .five to set
+                the widths for 2, 3, 4 and 5 item menus. -->
+    <ul id="menu" class="four">
+      <li><a href="index.html" title="Home" ><span class="big">H</span>ome</a></li>
+      <li><a href="AboutME.html" title="About Me"><span class="big">A</span>bout Me</a></li>
+      <li><a href="Blogs.html" title="Blogs" class="here"><span class="big">B</span>logs</a></li>
+      <li><a href="Contact.html" title="Contact"><span class="big">F</span>eedback</a></li>
+    </ul>
+    <!-- #page: holds all page content, as well as footer -->
+    <div id="page">
+      <h1>Tips on CSS</h1><br/>
+      <div dir="ltr" style="text-align: left;" trbidi="on">
+<span style="font-family: Georgia,&quot;Times New Roman&quot;,serif;">While creating a website I found some interesting tips on CSS which I would like to share. These techniques were gathered after viewing CSS of different websites.</span><br />
+<br />
+<u style="font-family: Georgia,&quot;Times New Roman&quot;,serif;"><b>Use of li/ul tags to create Menu &amp; styling through CSS -</b></u><br />
+<br/>
+<span style="font-family: Georgia,&quot;Times New Roman&quot;,serif;">This will create a left side navigation sidebar. The unordered list is styled using "<i style="color: blue;">list-style-type:none</i>", this way the bullets won't appear for the list content. </span><br />
+<br />
+<span style="color: red;">&lt;html&gt;</span><br />
+<span style="color: red;">&lt;body&gt;</span><br />
+<span style="color: #274e13;">&lt;style type="text/css"&gt;</span><br />
+<span style="color: #274e13;">#left {</span><br />
+<span style="color: #274e13;">&nbsp;&nbsp;&nbsp; float: left;</span><br />
+<span style="color: #274e13;">&nbsp;&nbsp;&nbsp; width: 200px;</span><br />
+<span style="color: #274e13;">&nbsp;&nbsp;&nbsp; padding: 0px 10px 40px 2px;</span><br />
+<span style="color: #274e13;">&nbsp;&nbsp;&nbsp; line-height:150%;</span><br />
+<span style="color: #274e13;">}</span><br />
+<span style="color: #274e13;">&lt;/style&gt;</span><br />
+<span style="color: red;">&lt;div id="left"&gt;</span><br />
+<span style="color: red;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;h2 style="color: Blue;"&gt;Blog Archive&lt;/h2&gt;</span><br />
+<span style="color: red;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;ul style="list-style-type:none"&gt;</span><br />
+<span style="color: red;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#" &gt;Design Learnings&lt;/a&gt;&lt;/li&gt;</span><br />
+<span style="color: red;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#" &gt;Vim Examples&lt;/a&gt;&lt;/li&gt;</span><br />
+<span style="color: red;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#" &gt;Version Control&lt;/a&gt;&lt;/li&gt;</span><br />
+<span style="color: red;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;li&gt;&lt;a href="#" &gt;Unix Commands&lt;/a&gt;&lt;/li&gt;</span><br />
+<span style="color: red;">&nbsp;&nbsp;&nbsp; &nbsp;&nbsp;&nbsp; &lt;/ul&gt;</span><br />
+<span style="color: red;">&nbsp;&nbsp;&nbsp; &lt;/div&gt;</span><br />
+<span style="color: red;">&lt;/body&gt;</span><br />
+<span style="color: red;">&lt;/html&gt;</span><br />
+<br />
+<u style="font-family: Georgia,&quot;Times New Roman&quot;,serif;"><b>Text Transform Property -</b></u><br />
+<br />
+<span style="font-family: Georgia,&quot;Times New Roman&quot;,serif;">We often know them but forget to use them. Different text styling -</span><br />
+<ul style="text-align: left;">
+<li><span style="font-family: Georgia,&quot;Times New Roman&quot;,serif;">uppercase</span></li>
+<li><span style="font-family: Georgia,&quot;Times New Roman&quot;,serif;">lowercase</span></li>
+<li><span style="font-family: Georgia,&quot;Times New Roman&quot;,serif;">capitalize</span></li>
+</ul>
+<div style="text-align: left;">
+<br />
+<span style="color: red;">&lt;html&gt;</span><br />
+<span style="color: red;">&lt;head&gt;</span></div>
+<span style="color: #274e13;">&lt;style type="text/css"&gt;</span><br />
+<span style="color: #274e13;">p.uppercase {text-transform:uppercase;}</span><br />
+<span style="color: #274e13;">p.lowercase {text-transform:lowercase;}</span><br />
+<span style="color: #274e13;">p.capitalize {text-transform:capitalize;}</span><br />
+<span style="color: #274e13;">&lt;/style&gt;</span><br />
+<span style="color: red;">&lt;/head&gt;</span><br />
+<span style="color: red;">&lt;body&gt;</span><br />
+<span style="color: red;">&lt;p class="uppercase"&gt;This is some text.&lt;/p&gt;</span><br />
+<span style="color: red;">&lt;p class="lowercase"&gt;This is some text.&lt;/p&gt;</span><br />
+<span style="color: red;">&lt;p class="capitalize"&gt;This is some text.&lt;/p&gt;</span><br />
+<span style="color: red;">&lt;/body&gt;</span><br />
+<span style="color: red;">&lt;/html&gt;</span><br />
+<br />
+<br />
+<u style="font-family: Georgia,&quot;Times New Roman&quot;,serif;"><b>Repetition of a image in a column</b></u><br />
+<br />
+<span style="font-family: Georgia,&quot;Times New Roman&quot;,serif;">I have used the inserted image as a background for the complete web page.&nbsp; This image is styled by using "<i style="color: blue;">repeat - y</i>" property.It shows a complete </span><span class="st" style="font-family: Georgia,&quot;Times New Roman&quot;,serif;"><i><span style="color: blue;">demarcation</span> </i></span><span style="font-family: Georgia,&quot;Times New Roman&quot;,serif;">between the left side and the right side.</span><br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://2.bp.blogspot.com/-bwi9XFWhAc0/T1Xdtn0-ADI/AAAAAAAAABE/pGZKZVypdwU/s1600/back.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="8" src="http://2.bp.blogspot.com/-bwi9XFWhAc0/T1Xdtn0-ADI/AAAAAAAAABE/pGZKZVypdwU/s400/back.png" width="400" /></a></div>
+<br />
+<span style="color: red;">&lt;html&gt;</span><br />
+<span style="color: red;">&lt;body&gt;</span><br />
+<span style="color: #274e13;">&lt;style&gt;</span><br />
+<span style="color: #274e13;">body {</span><br />
+<span style="color: #274e13;">&nbsp;&nbsp;&nbsp; background: #666666 url(images/back.png) repeat-y center top;</span><br />
+<span style="color: #274e13;">}</span><br />
+<span style="color: #274e13;">&lt;/style&gt;</span><br />
+<span style="color: red;">&lt;/body&gt;</span><br />
+<span style="color: red;">&lt;/html&gt;</span><br />
+<br />
+<span style="font-family: Georgia,&quot;Times New Roman&quot;,serif;">Hope you will try these &amp; appreciate my learning's !!!!</span></div>
+<hr>
+<iframe src="http://www.facebook.com/plugins/like.php?href=http://arpita14mohan.github.com/blob/master/Vim.html" scrolling="no" frameborder="0"style="border:none; width:200px; height:80px"></iframe>
+<div class="floatLeft">
+<a href="https://twitter.com/share" class="twitter-share-button" data-lang="en" data-show-count="true" style="padding:0px" >Tweet</a>
+</div>
+<div class="js-kit-comments" backwards="yes" paginate="10"></div>
+<script src="http://js-kit.com/comments.js"></script>
+<div class="js-kit-rating"></div>
+<script src="http://js-kit.com/ratings.js"></script>
+
+      <p class="footer">
+        Copyright&copy; 2012 arpita14mohan.github.com.      </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
