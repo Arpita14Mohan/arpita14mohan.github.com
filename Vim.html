@@ -1,0 +1,55 @@
+<html>
+<head>
+<link rel="stylesheet" type="text/css" href="style1.css" />
+<script type="text/javascript">
+
+</script>
+</head>
+
+<body onload="func2()">
+<div>
+<div style="height=140px; width=1230px;" id="header">
+<h1 id="logo-text">Dealing with Multiple Files in Vim and Few Examples </h1>
+</div>
+<div valign="top">
+<!-- Left Navigation Div-->
+<div id="leftNav">
+<p>Hi All,<br/>
+I am very used to using Notepad++. So when I got a chance to work on VIM editor, I thought why not give it a chance too. Before proceeding with vim, I cleared my concepts by working on the examples mentioned in Vim Tutor. They are sufficient to atleast clear up the basics of vim.  Then I started working on few of the examples which are mentioned below and can help users when exploring vim editor.</p>
+<p><em><b>Dealing with Multiple Files</b></em></p>
+<span>You can specify multiple files on the command line, as follows:
+</br>
+</span>
+<p><em>$ vim one.c two.c</em></p>
+<span>This command starts Vim  and tells it that you will be editing two files.
+By default,Vim displays just the first file.
+To edit the next file, you need to change files using the mentioned command.</span><br/>
+<p><em>:next</em></p>
+<span>If you have unsaved changes in the current file and you try to do a :next,
+you will get a warning message and the :next  will not work.
+You can solve this problem and save the file using the following command:</span></br>
+<p><em>:write</em></p>
+<span>In other words, you can perform a :write  followed by a :next.
+The Vim  editor has a shorthand command for this.The following command performs both operations:</span></br>
+<p><em>:wnext</em></p>
+<span>In other words, you can perform a :write  followed by a :next.
+The Vim  editor has a shorthand command for this.The following command performs both operations:</span></br>
+<p><em>:wnext!</em></p>
+<span>Or, you can force Vim  to go the next file using the force (!) option. If you use the
+following command and your current file has changes, you will lose those chan</span>
+</div>
+<div id="contentArea">
+</div>
+</div>
+<!-- Footer Div-->
+<div id="footer">
+<p>
+<a href="index.html">Home</a></br>
+<a href="Blogs.html">Blogs</a></br>
+@ Copyright 2012. Arpita Mohan
+</p>
+</div>
+</div>
+
+</body>
+</html>
