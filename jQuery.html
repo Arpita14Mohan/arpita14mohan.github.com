@@ -1,0 +1,92 @@
+
+<html>
+<head>
+  <title>Discover Technology - Arpita Mohan</title>
+  <link rel="stylesheet" type="text/css" href="css/html.css" media="screen, projection, tv " />
+  <link rel="stylesheet" type="text/css" href="css/layout.css" media="screen, projection, tv" />
+  <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+</head>
+
+<body>
+<div id="wrapper">
+  <div id="content">
+    <div id="header">
+      <h1><span class="big darkBrown">D</span>iscover <span class="big darkBrown">T</span>echnology </h1>
+      <h2><span class="highlight">Designed by, Arpita Mohan</span></h2>
+    </div>
+    <!-- #menu: topbar menu of the site.  Use the helper classes .two, .three, .four and .five to set
+                the widths for 2, 3, 4 and 5 item menus. -->
+    <ul id="menu" class="four">
+      <li><a href="index.html" title="Home" ><span class="big">H</span>ome</a></li>
+      <li><a href="AboutME.html" title="About Me"><span class="big">A</span>bout Me</a></li>
+      <li><a href="Blogs.html" title="Blogs" class="here"><span class="big">B</span>logs</a></li>
+      <li><a href="Contact.html" title="Contact"><span class="big">F</span>eedback</a></li>
+    </ul>
+    <!-- #page: holds all page content, as well as footer -->
+    <div id="page">
+      <h1>jQuery Lessons!!!</h1>
+      <div dir="ltr" style="text-align: left;" trbidi="on">
+<br />
+Hi All,<br />
+<br />
+These are few of my findings after studying jQuery. Some points are just clarifications and some are examples where I was stuck during my course of learning.<br />
+<br/>
+<b><span style="color: blue;">Self-closing script tags don't work?</span></b><br />
+Browsers do not correctly recognize:<br />
+<span style="color: #38761d;">&lt;script src="foobar.js" /&gt; </span>// self-closing script tag<br />
+Only this is recognized:<br />
+<span style="color: #38761d;">&lt;script src="foobar.js"&gt;&lt;/script&gt;</span><br />
+<br />
+<span style="color: blue;"><b>.contents()</b></span><br />
+Given a jQuery object that represents a set of DOM elements, the .contents() method allows us to search through the immediate children of these elements in the DOM tree and construct a new jQuery object from the matching elements. The .contents() and .children() methods are similar, except that the former includes text nodes as well as HTML elements in the resulting jQuery object<br />
+<br />
+/* In the function mentioned below, I was trying to remove the BOLD property of the text which I had applied using the WrapInner property. The ".contents().contents()" method helped me remove the bold property of the text.*/<br />
+<br />
+<span style="color: #38761d;">$('#SliceWrapInner').toggle(function() {</span><br />
+<span style="color: #38761d;"><span class="Apple-tab-span" style="white-space: pre;">    </span> &nbsp; $("li").slice(0, 2).wrapInner("&lt;b&gt;&lt;/b&gt;").css("background", "yellow");</span><br />
+<span style="color: #38761d;"><span class="Apple-tab-span" style="white-space: pre;">    </span> &nbsp;}, function() {</span><br />
+<span style="color: #38761d;"><span class="Apple-tab-span" style="white-space: pre;">     </span>$("li").slice(0, 2).contents().contents().unwrap();</span><br />
+<span style="color: #38761d;"><span class="Apple-tab-span" style="white-space: pre;">    </span> &nbsp;});&nbsp;</span><br />
+<span class="Apple-tab-span" style="white-space: pre;">    </span> <br />
+<b><span style="color: blue;">.append() Versus .appendTo()</span></b><br />
+Both jQuery append() and appendTo() methods are doing the same task, add a text or html content after the content of the matched elements. The major difference is in the syntax.<br />
+<span style="color: #38761d;">&lt;div class="box"&gt;I'm a big box&lt;/div&gt;</span><br />
+<span style="color: #38761d;">&lt;div class="box"&gt;I'm a big box 2&lt;/div&gt;</span><br />
+<br />
+<i><span style="color: red;"><b>Execution-</b></span></i><br />
+<span style="color: #38761d;">$('.box').append("&lt;div class='newbox'&gt;I'm new box by prepend&lt;/div&gt;");</span><br />
+<span style="color: #38761d;">$("&lt;div class='newbox'&gt;I'm new box by appendTo&lt;/div&gt;").appendTo('.box');</span><br />
+<br />
+<i><span style="color: red;"><b>Result-</b></span></i><br />
+Both methods above are doing the same task, but with different syntax, the new contents after append() or appendTo() will become<br />
+<br />
+<span style="color: #38761d;">&lt;div class="box"&gt;</span><br />
+<span style="color: #38761d;">&nbsp; &nbsp;I'm a big box</span><br />
+<span style="color: #38761d;">&nbsp; &nbsp;&lt;div class='newbox'&gt;I'm new box by prepend&lt;/div&gt;</span><br />
+<span style="color: #38761d;">&lt;/div&gt;</span><br />
+<br />
+<span style="color: #38761d;">&lt;div class="box"&gt;</span><br />
+<span style="color: #38761d;">&nbsp; &nbsp;I'm a big box 2</span><br />
+<span style="color: #38761d;">&nbsp; &nbsp;&lt;div class='newbox'&gt;I'm new box by prepend&lt;/div&gt;</span><br />
+<span style="color: #38761d;">&lt;/div&gt;</span><br />
+<br />
+<b><span style="color: blue;">Functional difference between these three jQuery methods:</span></b><br />
+<b><i><span style="color: red;">hide()</span></i></b> sets the matched element's CSS display property to none.<br />
+<br />
+<b><i><span style="color: red;">remove()</span></i> </b>removes the matched elements from the DOM completely.<br />
+<br />
+<span style="color: red;"><i><b>detach()</b> </i></span>is like remove(), but keeps the stored data and events associated with the matched elements.<br />
+<br />
+<b><span style="color: blue;"><u>Helpful Links-</u></span></b><br />
+<ul style="text-align: left;">
+<li><a href="http://www.learningjquery.com/2009/03/43439-reasons-to-use-append-correctly">http://www.learningjquery.com/2009/03/43439-reasons-to-use-append-correctly</a></li>
+<li><a href="http://boardreader.com/thread/detach_vs_hide_vs_remove_in_jquery_5ft4kX2xxbq.html">http://boardreader.com/thread/detach_vs_hide_vs_remove_in_jquery_5ft4kX2xxbq.html</a></li>
+</ul>
+</div>
+      <p class="footer">
+        Copyright&copy; 2012 arpita14mohan.github.com.      </p>
+    </div>
+  </div>
+</div>
+</body>
+</html>
