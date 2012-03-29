@@ -1,49 +1,109 @@
+
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style1.css" />
-<script type="text/javascript">
-
-</script>
+  <title>Discover Technology - Arpita Mohan</title>
+  <link rel="stylesheet" type="text/css" href="css/html.css" media="screen, projection, tv " />
+  <link rel="stylesheet" type="text/css" href="css/layout.css" media="screen, projection, tv" />
+  <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
 </head>
 
-<body onload="func2()">
-<div>
-<div style="height=140px; width=1230px;" id="header">
-<h1 id="logo-text">Design Learnings</h1>
-</div>
-<div valign="top">
-<!-- Left Navigation Div-->
-<div id="leftNav">
-<p>Hi All,<br/>
-As a developer do we ever pay a thought why our User Designer have given us this wireframe? There are lot many WHY's but due to time constraint we never search for the answers to these WHY's. I got a chance to read "Clean Up Your Mess - A Guide to Visual Design for Everyone". It was a wonderful experience going through this article. Topics like Clean Designs, Size, Proximity , Alignmet were explained very nicely.</p>
-<p><em><b>Padding Shorthand Notation</b></em></p>
-<span>There is also a shorthand property, padding. This property allows you to specify all your padding on one line:
-</br>
-<ul>
-    <li>padding: 20px — Padding for all four sides is 20 pixels.</li>
-    <li>padding: 20px 80px — Padding for the top and bottom is 20 pixels, the left and right is 80 pixels.</li>
-    <li>padding: 20px 80px 10px — Padding for the top is 20 pixels, the left and right is 80 pixels, and the bottom is 10 pixels.</li>
-    <li>padding: 20px 80px 10px 40px — Padding for the top is 20 pixels, the right is 80 pixels, the bottom is 10 pixels, and the left is 40 pixels.</li>
+<body>
+<div id="wrapper">
+  <div id="content">
+    <div id="header">
+      <h1><span class="big darkBrown">D</span>iscover <span class="big darkBrown">T</span>echnology </h1>
+      <h2><span class="highlight">Designed by, Arpita Mohan</span></h2>
+    </div>
+    <!-- #menu: topbar menu of the site.  Use the helper classes .two, .three, .four and .five to set
+                the widths for 2, 3, 4 and 5 item menus. -->
+    <ul id="menu" class="four">
+      <li><a href="index.html" title="Home" class="here"><span class="big">H</span>ome</a></li>
+      <li><a href="AboutME.html" title="About Me"><span class="big">A</span>bout Me</a></li>
+      <li><a href="Blogs.html" title="Blogs"><span class="big">B</span>logs</a></li>
+      <li><a href="#" title="Contact"><span class="big">C</span>ontact</a></li>
+    </ul>
+    <!-- #page: holds all page content, as well as footer -->
+    <div id="page">
+      <h1>Design Learnings</h1>
+      <div dir="ltr" style="text-align: left;" trbidi="on">
+<br />
+As a developer do we ever pay a thought why our User Designer have given us this wireframe? There are lot many <b>WHY's </b>but due to time constraint we never search for the answers to these <b>WHY's</b>. I got a chance to read "<i><span style="color: #38761d;">Clean Up Your Mess - A Guide to Visual Design for Everyone</span></i>". It was a wonderful experience going through this article. Topics like Clean Designs, Size, Proximity , Alignmet were explained very nicely.<br />
+<br />
+Few Examples from my learning experience -<br />
+<br />
+<b><u>Padding Shorthand Notation</u></b><br />
+There is also a shorthand property, padding. This property allows you to specify all your padding on one line:<br />
+<ul style="text-align: left;">
+<li><span style="color: #38761d;">padding: 20px</span> — Padding for all four sides is 20 pixels.</li>
+<li><span style="color: #38761d;">padding: 20px 80px</span> — Padding for the top and bottom is 20 pixels, the left and right is 80 pixels.</li>
+<li><span style="color: #38761d;">padding: 20px 80px 10px </span>— Padding for the top is 20 pixels, the left and right is 80 pixels, and the bottom is 10 pixels.</li>
+<li><span style="color: #38761d;">padding: 20px 80px 10px 40px</span> — Padding for the top is 20 pixels, the right is 80 pixels, the bottom is 10 pixels, and the left is 40 pixels.</li>
 </ul>
-</span>
-<p><em><b>Text-Indent</b></em></p>
-<span>If you enter a negative value for text-indent, the first line of the text will shift to the left. This is useful for creating “hanging indents” for headings and the like. The only trick is that you must set the padding of containing block accordingly.</span><br/>
-<p><em><b>Z-Index</b></em></p>
-<span>Z-index uses values to identify which element is more important then the other. The default value is 0. Usually, I give the item that should be on top value 20, the less important 10 and the least important item 1.The Z-index requires an other property to style the elements that should get ‘Z-indexed’.</span></br>
-
+<br />
+<b><u>Text-Indent</u></b><br />
+If you enter a negative value for text-indent, the first line of the text will shift to the left. This is useful for creating “hanging indents” for headings and the like. The only trick is that you must set the padding of containing block accordingly.<br />
+<br />
+<b><u>Z-Index</u></b><br />
+Z-index uses values to identify which element is more important then the other. The default value is 0. Usually, I give the item that should be on top value 20, the less important 10 and the least important item 1.The Z-index requires an other property to style the elements that should get ‘Z-indexed’. Found out a very good example to explain Z - Index. To check the output you have to try the example mentioned.<br />
+<br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&lt;html&gt;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&lt;head&gt;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&lt;title&gt;Z-Index Example&lt;/title&gt;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&lt;style type="text/css"&gt;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;"><br /></span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">body,td,th</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&nbsp;{</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;"><span class="Apple-tab-span" style="white-space: pre;"> </span>font-family: Georgia, Times New Roman, Times, serif;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">}</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;"><br /></span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">div.box1 {</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;"><span class="Apple-tab-span" style="white-space: pre;"> </span>position: absolute;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&nbsp;<span class="Apple-tab-span" style="white-space: pre;"> </span>top: 20px; left: 20px;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&nbsp;<span class="Apple-tab-span" style="white-space: pre;"> </span>height: 250px; width: 250px;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&nbsp;<span class="Apple-tab-span" style="white-space: pre;"> </span>color: white;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&nbsp;<span class="Apple-tab-span" style="white-space: pre;"> </span>background-color: blue;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&nbsp;<span class="Apple-tab-span" style="white-space: pre;"> </span>z-index: 1;}</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;"><br /></span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">div.box2 {</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;"><span class="Apple-tab-span" style="white-space: pre;"> </span>position: absolute;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&nbsp;<span class="Apple-tab-span" style="white-space: pre;"> </span>top: 150px; left: 10px;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&nbsp;<span class="Apple-tab-span" style="white-space: pre;"> </span>height: 100px; width: 300px;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&nbsp;<span class="Apple-tab-span" style="white-space: pre;"> </span>background-color: red;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&nbsp;<span class="Apple-tab-span" style="white-space: pre;"> </span>z-index: 20;}</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;"><br /></span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">div.box3 {</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;"><span class="Apple-tab-span" style="white-space: pre;"> </span>position: absolute;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;"><span class="Apple-tab-span" style="white-space: pre;"> </span>top: 15px; left: 175px;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&nbsp;<span class="Apple-tab-span" style="white-space: pre;"> </span>height: 125px; width: 125px;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&nbsp;<span class="Apple-tab-span" style="white-space: pre;"> </span>background-color: yellow;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&nbsp;<span class="Apple-tab-span" style="white-space: pre;"> </span>z-index: 10;}</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;"><br /></span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&lt;/style&gt;&lt;/head&gt;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&lt;body&gt;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&lt;div class="box1"&gt;Blue = Div #1 &lt;/div&gt;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&lt;div class="box2"&gt;Pink = Div #2 &lt;/div&gt;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&lt;div class="box3"&gt;Yellow = Div #3 &lt;/div&gt;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&lt;/body&gt;</span><br />
+<span style="color: red; font-family: Times, 'Times New Roman', serif;">&lt;/html&gt;</span><br />
+<br />
+Hope you will benefit from my learnings. I am still exploring the concept behind Meta Tags. Difference between Meta Description and Meta Keywords. Will get back to you on the same soon.<br />
+<br />
+<b><u>Helpful Links -</u></b><br />
+<ul style="text-align: left;">
+<li><a href="http://www.456bereastreet.com/lab/developing_with_web_standards/structure/">http://www.456bereastreet.com/lab/developing_with_web_standards/structure/</a><br /></li>
+<li><a href="http://www.goer.org/HTML/intermediate/margins_and_padding/">http://www.goer.org/HTML/intermediate/margins_and_padding/</a><br /></li>
+<li><a href="http://www.ezineasp.net/post/HTML-Div-CSS-Style-Float.aspx">http://www.ezineasp.net/post/HTML-Div-CSS-Style-Float.aspx</a><br /></li>
+<li><a href="http://searchenginewatch.com/article/2067564/How-To-Use-HTML-Meta-Tags">http://searchenginewatch.com/article/2067564/How-To-Use-HTML-Meta-Tags</a><br /></li>
+</ul>
+<br />
+<br />
+<br />
+<br />
 </div>
-<div id="contentArea">
+      <p class="footer">
+        Copyright&copy; 2012 arpita14mohan.github.com.      </p>
+    </div>
+  </div>
 </div>
-</div>
-<!-- Footer Div-->
-<div id="footer">
-<p>
-<a href="index.html">Home</a></br>
-<a href="Blogs.html">Blogs</a></br>
-@ Copyright 2012. Arpita Mohan
-</p>
-</div>
-</div>
-
 </body>
 </html>

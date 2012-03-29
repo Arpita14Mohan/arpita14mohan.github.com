@@ -1,55 +1,74 @@
+
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="style1.css" />
-<script type="text/javascript">
-
-</script>
+  <title>Discover Technology - Arpita Mohan</title>
+  <link rel="stylesheet" type="text/css" href="css/html.css" media="screen, projection, tv " />
+  <link rel="stylesheet" type="text/css" href="css/layout.css" media="screen, projection, tv" />
+  <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
 </head>
 
-<body onload="func2()">
-<div>
-<div style="height=140px; width=1230px;" id="header">
-<h1 id="logo-text">Dealing with Multiple Files in Vim and Few Examples </h1>
-</div>
-<div valign="top">
-<!-- Left Navigation Div-->
-<div id="leftNav">
-<p>Hi All,<br/>
-I am very used to using Notepad++. So when I got a chance to work on VIM editor, I thought why not give it a chance too. Before proceeding with vim, I cleared my concepts by working on the examples mentioned in Vim Tutor. They are sufficient to atleast clear up the basics of vim.  Then I started working on few of the examples which are mentioned below and can help users when exploring vim editor.</p>
-<p><em><b>Dealing with Multiple Files</b></em></p>
-<span>You can specify multiple files on the command line, as follows:
-</br>
-</span>
-<p><em>$ vim one.c two.c</em></p>
-<span>This command starts Vim  and tells it that you will be editing two files.
-By default,Vim displays just the first file.
-To edit the next file, you need to change files using the mentioned command.</span><br/>
-<p><em>:next</em></p>
-<span>If you have unsaved changes in the current file and you try to do a :next,
-you will get a warning message and the :next  will not work.
-You can solve this problem and save the file using the following command:</span></br>
-<p><em>:write</em></p>
-<span>In other words, you can perform a :write  followed by a :next.
-The Vim  editor has a shorthand command for this.The following command performs both operations:</span></br>
-<p><em>:wnext</em></p>
-<span>In other words, you can perform a :write  followed by a :next.
-The Vim  editor has a shorthand command for this.The following command performs both operations:</span></br>
-<p><em>:wnext!</em></p>
-<span>Or, you can force Vim  to go the next file using the force (!) option. If you use the
-following command and your current file has changes, you will lose those chan</span>
-</div>
-<div id="contentArea">
-</div>
-</div>
-<!-- Footer Div-->
-<div id="footer">
-<p>
-<a href="index.html">Home</a></br>
-<a href="Blogs.html">Blogs</a></br>
-@ Copyright 2012. Arpita Mohan
-</p>
-</div>
-</div>
+<body>
+<div id="wrapper">
+  <div id="content">
+    <div id="header">
+      <h1><span class="big darkBrown">D</span>iscover <span class="big darkBrown">T</span>echnology </h1>
+      <h2><span class="highlight">Designed by, Arpita Mohan</span></h2>
+    </div>
+    <!-- #menu: topbar menu of the site.  Use the helper classes .two, .three, .four and .five to set
+                the widths for 2, 3, 4 and 5 item menus. -->
+    <ul id="menu" class="four">
+      <li><a href="index.html" title="Home" class="here"><span class="big">H</span>ome</a></li>
+      <li><a href="AboutME.html" title="About Me"><span class="big">A</span>bout Me</a></li>
+      <li><a href="Blogs.html" title="Blogs"><span class="big">B</span>logs</a></li>
+      <li><a href="#" title="Contact"><span class="big">C</span>ontact</a></li>
+    </ul>
+    <!-- #page: holds all page content, as well as footer -->
+    <div id="page">
+      <h1>Dealing with Multiple Files in Vim & Few Examples</h1>
+      <div dir="ltr" style="text-align: left;" trbidi="on">
+Hi,<br /><br />I am very used to using Notepad++. So when I got a chance to work on VIM editor, I thought why not give it a chance too. Before proceeding with vim, I cleared my concepts by working on the examples mentioned in Vim Tutor. They are sufficient to atleast clear up the basics of vim.&nbsp; Then I started working on few of the examples which are mentioned below and can help users when exploring vim editor.<br /><br /><u><b>Dealing with Multiple Files</b></u><br /><br />You can specify multiple files on the command line, as follows:<br /><i style="color: red;">$ vim one.c two.c</i><br />This command starts Vim&nbsp; and tells it that you will be editing two files.<br />By default,Vim displays just the first file.<br />To edit the next file, you need to change files using the mentioned command.<br />
+<div style="color: red;">
+<i>:next&nbsp;</i></div>
+If you have unsaved changes in the current file and you try to do a :next, <br />you will get a warning message and the :next&nbsp; will not work.<br />You can solve this problem and save the file using the following command:<br /><span style="color: red;">:</span><i style="color: red;">write</i><br />In other words, you can perform a :write&nbsp; followed by a :next.<br />The Vim&nbsp; editor has a shorthand command for this.The following command performs both operations:<br /><i style="color: red;">:wnext</i><br />Or, you can force Vim&nbsp; to go the next file using the force (!) option. If you use the<br />following command and your current file has changes, you will lose those changes:<br /><i><span style="color: red;">:next!</span></i><br /><br />Similarly, if you want to view one.c from two.c by the following command.<br /><span style="color: red;">:previous</span><i style="color: red;"><br />:wprevious </i>(save the changes made in two.c and move on to one.c)<br /><i style="color: red;">:previous! </i>(force Vim to go back to the previous file using (!) option. You will lose the changes mad ein the current file).<br /><br /><span id="goog_1046661396"></span><span id="goog_1046661397"></span><br />
+<u><b>Line Completion</b></u><br />
+If you want to insert an existing line, type the first few 
+words/characters of the line, and then press the Vim shortcut keys 
+“<i style="color: red;">Ctrl+x Ctrl+l</i>”, which will display all the lines matching that pattern.&nbsp; <u><b><br /></b></u>
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://4.bp.blogspot.com/-pLG-iAUP4Cw/T0uF9G0kslI/AAAAAAAAAAs/UWI4N_ugSJ8/s1600/Line+Completion.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="198" src="http://4.bp.blogspot.com/-pLG-iAUP4Cw/T0uF9G0kslI/AAAAAAAAAAs/UWI4N_ugSJ8/s320/Line+Completion.png" width="320" /></a></div>
+<br />
 
+<u><b>Word Completion - Backward</b></u><br />
+If you want to insert an existing word, type the first few 
+words/characters of the word, and then press the Vim shortcut keys 
+“<i style="color: red;">Ctrl+x Ctrl+p</i>”, which will display all the words matching that pattern.&nbsp;<u><b> </b></u><br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://3.bp.blogspot.com/-n0G6zeMzAZY/T0uGkEzAjqI/AAAAAAAAAA0/Ku2OL1BObB4/s1600/Word+completion+%E2%80%93+backward.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="198" src="http://3.bp.blogspot.com/-n0G6zeMzAZY/T0uGkEzAjqI/AAAAAAAAAA0/Ku2OL1BObB4/s320/Word+completion+%E2%80%93+backward.png" width="320" /></a></div>
+<br />
+<br />
+<u><b>Word Completion - Forward</b></u><br />
+If you want to insert an existing word, type the first few 
+words/characters of the word, and then press the Vim shortcut keys 
+“<i style="color: red;">Ctrl+x Ctrl+n</i>”, which will display all the words matching that pattern.&nbsp;<u><b> </b></u>
+<br />
+<br />
+<div class="separator" style="clear: both; text-align: center;">
+<a href="http://1.bp.blogspot.com/-xAKtFDgY3Ow/T0uG4YMXEeI/AAAAAAAAAA8/tR-cxjNHQT8/s1600/Word+completion+%E2%80%93+forward.png" imageanchor="1" style="margin-left: 1em; margin-right: 1em;"><img border="0" height="198" src="http://1.bp.blogspot.com/-xAKtFDgY3Ow/T0uG4YMXEeI/AAAAAAAAAA8/tR-cxjNHQT8/s320/Word+completion+%E2%80%93+forward.png" width="320" /></a></div>
+<br />
+Hope you had a wonderful learning experience!!!<br />
+<br />
+<br />
+<u><b>Helpful Links</b></u><br />
+<ul style="text-align: left;">
+<li><a href="ftp://ftp.vim.org/pub/vim/doc/book/vimbook-OPL.pdf">ftp://ftp.vim.org/pub/vim/doc/book/vimbook-OPL.pdf</a><br /></li>
+</ul>
+</div>
+      <p class="footer">
+        Copyright&copy; 2012 arpita14mohan.github.com.      </p>
+    </div>
+  </div>
+</div>
 </body>
 </html>
