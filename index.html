@@ -5,6 +5,8 @@
   <link rel="stylesheet" type="text/css" href="css/html.css" media="screen, projection, tv " />
   <link rel="stylesheet" type="text/css" href="css/layout.css" media="screen, projection, tv" />
   <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+  <script src="js/jquery.min.js"></script>
+<script src="js/jquery.cross-slide.min.js"></script>
   <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -18,8 +20,26 @@
   })();
 
 </script>
+<script>
+  $(function() {
+    $('#slideshow').crossSlide({
+      sleep: 2,
+      fade: 1
+    }, [
+      { src: 'img/photos/tech.jpg' },
+      { src: 'img/photos/technology.jpg' },
+      { src: 'img/photos/technology1.jpg' },
+      { src: 'img/photos/Touch-Screen-Technology.jpg' }
+    ])
+  });
+</script>
 </head>
-
+<style>
+#slideshow {
+  width: 600px;
+  height: 300px;
+}
+</style>
 <body>
 <div id="wrapper">
   <div id="content">
@@ -48,8 +68,7 @@
       <p><b>Technology</b></p>
 		<li>The terminology of an art, science, etc.; technical nomenclature.</li>
 		<li>Technological  process, invention, method, or the like.</li><br/>
-		<img src="img/photos/tech.jpg" border="0" alt="Technology" class="floatLeft" />
-		
+        <div id="slideshow"></div>
 		<p class="footer">
         Copyright&copy; 2012 arpita14mohan.github.com. </p>
     </div>

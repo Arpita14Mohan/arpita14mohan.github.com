@@ -5,6 +5,12 @@
   <link rel="stylesheet" type="text/css" href="css/html.css" media="screen, projection, tv " />
   <link rel="stylesheet" type="text/css" href="css/layout.css" media="screen, projection, tv" />
   <link rel="stylesheet" type="text/css" href="css/print.css" media="print" />
+  <link href="css/movingboxes.css" media="screen" rel="stylesheet">
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+  <script src="js/jquery.movingboxes.js"></script>
+
+
+
   <script type="text/javascript">
 
   var _gaq = _gaq || [];
@@ -18,8 +24,31 @@
   })();
 
 </script>
-</head>
 
+</head>
+<!-- Slider -->
+<style>
+		/* Dimensions set via css in MovingBoxes version 2.2.2+ */
+		#slider { width: 500px; }
+		#slider li { width: 250px; }
+		
+	</style>
+	<script>
+	$(function(){
+
+		$('#slider').movingBoxes({
+			/* width and panelWidth options deprecated, but still work to keep the plugin backwards compatible
+			width: 500,
+			panelWidth: 0.5,
+			*/
+			startPanel   : 1,      // start with this panel
+			wrap         : false,   // if true, the panel will "wrap" (it really rewinds/fast forwards) at the ends
+			buildNav     : true,   // if true, navigation links will be added
+			navFormatter : function(){ return "&#9679;"; } // function which returns the navigation text for each panel
+		});
+
+	});
+	</script>
 <body>
 <div id="wrapper">
   <div id="content">
@@ -50,14 +79,41 @@
         <li><b>M</b>ovies & <b>T</b>elivsion </li>
       </ul>
 	  <h1>Memories Down The Lane</h1>
-	  <p></p>
-	  <img src="img/photos/MeHubby.jpg" border="0" alt="" /><p>Me and Anubhav(better half)</p>
-	   <img src="img/photos/Me.jpg" border="0" alt="" style="pading" /><p>Its Me</p>
-	  <img src="img/photos/Rangoli.jpg" border="0" alt=""  /><p>My Creation - Rangoli on Diwali</p>
-	  <img src="img/photos/SisnMe.jpg" border="0" alt="" class="" /><p>Me and Aayushi(my sister)</p> 
-	 
-	  
-      <p class="footer">
+	  	<!-- MovingBoxes Slider -->
+	<ul id="slider">
+
+		<li>
+			<img src="img/photos/MeHubby.jpg" alt="picture">
+			<h2>Arpita & Better Half</h2>
+		</li>
+
+		<li>
+			<img src="img/photos/Me.jpg" alt="picture">
+			<h2>Its Me</h2>
+		</li>
+
+		<li>
+			<img src="img/photos/Rangoli.jpg" alt="picture">
+			<h2>One of my Creation - Rangoli on Diwali</h2>
+		</li>
+
+		<li>
+			<img src="img/photos/SisnMe.jpg" alt="picture">
+			<h2>Me and Aayushi (my sweet sis)</h2>
+		</li>
+		
+		<li>
+			<img src="img/photos/MyMom.jpg" alt="picture">
+			<h2>My Mother</h2>
+		</li>
+		
+		<li>
+			<img src="img/photos/Cake.jpg" alt="picture">
+			<h2>Happy Bday To Me!!!</h2>
+		</li>
+
+	</ul> <!-- end Slider #1 -->
+	<p class="footer">
         Copyright&copy; 2012 arpita14mohan.github.com.      </p>
     </div>
   </div>
